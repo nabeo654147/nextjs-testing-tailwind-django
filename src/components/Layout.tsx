@@ -37,25 +37,25 @@ const Layout: React.FC<TitleProps> = ({ children, title = 'Nextjs' }) => {
         </nav>
       </header>
 
-      <main className="flex flex-1 justify-center items-center flex-col w-screen">
+      <main className="flex flex-1 justify-center items-center flex-col w-screen my-12">
         {children}
       </main>
 
       <footer className="flex flex-col items-center mt-[-6px] text-[#fff] bg-[#262c3a]">
-        <span className="hidden items-center mt-9 mb-12 text-[8px] font-semibold sm:flex">
+        <span className="hidden items-center mt-9 mb-8 text-[8px] font-semibold sm:flex">
           CREATED BY<p className="ml-3 text-lg font-bold">渡邉 智彦</p>
         </span>
         <Link href={'/'}>
           <a className="hover:opacity-75">
             <Image
-              src="/Corkboy.png"
-              alt="Corkboy"
+              src="/vintage.jpg"
+              alt="vintage"
               height={130}
               width={110}
             ></Image>
           </a>
         </Link>
-        <div className=" grid grid-cols-2 gap-4 mt-12 mb-6">
+        <div className=" grid grid-cols-2 gap-4 mt-8 mb-6">
           <a
             href="https://twitter.com/nabeo654147"
             className="hover:opacity-75"
