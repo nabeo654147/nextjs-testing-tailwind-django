@@ -20,7 +20,7 @@ const BlogPage: React.FC<STATICPROPS> = ({ posts }) => {
   };
   const deletePost = async (id: number) => {
     await fetch(`${process.env.NEXT_PUBLIC_RESTAPI_URL}/delete-blog/${id}`, {
-      method: 'DLETE',
+      method: 'DELETE',
       headers: {
         Authorization: `JWT ${cookie.get('access_token')}`,
       },
