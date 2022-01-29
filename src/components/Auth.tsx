@@ -64,6 +64,7 @@ const Auth: React.FC = () => {
             required
             className="px-3 py-2 border border-gray-300"
             value={username}
+            placeholder="Username"
             onChange={(e) => {
               setUsername(e.target.value);
             }}
@@ -75,13 +76,14 @@ const Auth: React.FC = () => {
             required
             className="px-3 py-2 border border-gray-300"
             value={password}
+            placeholder="Password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
           />
         </div>
         <p
-          data-testid="made-change"
+          data-testid="mode-change"
           onClick={() => {
             setIsLogin(!isLogin);
             setError('');
